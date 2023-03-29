@@ -1,0 +1,40 @@
+SIMPLE INTEREST
+
+Step 1- let p = 3
+Step 2- let r = 5
+Step 3- let t = 3
+Step 4- let rate = r/100
+Step 5- let timerate = rate * t
+Step 6- let x = 1 + timerate
+Step 7- let A = P * x
+Step 8- Print A
+Step 9- END 
+
+
+COMPOUND INTEREST
+
+Step 1- let p = 3
+Step 2- let r = 5
+Step 3- let t = 3
+Step 4- let n = 1
+Step 5- let rate = r/n
+Step 6- let x = 1 + rate
+Step 7- let timerate = x ^n*t
+Step 8- let A = P * timerate
+Step 9- Print A
+Step 10- END 
+
+ANNUITY PLAN
+
+Step 1- let PMT = 3
+Step 2- let r = 5
+Step 2- let R = 9
+Step 3- let t = 3
+Step 4- let n = 1
+Step 5- let rate = r/n
+Step 6- let x = 1 + rate
+Step 7- let timerate = x ^n*t
+Step 8- let Z = timerate - 1
+Step 9- let Y = Z / (R/r)
+Step 10- let A = PMT * Y
+Step 11- END 
