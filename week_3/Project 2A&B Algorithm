@@ -1,0 +1,22 @@
+Project 2A Algorithm
+
+Initialize the coefficients A, B, C, and D.
+Calculate the discriminant, delta = (B^2 - 3AC)/(9*A^2).
+If delta > 0, set the variable S = cbrt((B/3A) + delta) and T = cbrt((B/3A) - delta), where cbrt is the cube root function.
+If delta = 0, set S = T = cbrt(B/3A).
+If delta < 0, set alpha = (-B/3A) and beta = sqrt(3)*sqrt(-(B^2 - 3AC))/(3A).
+Set S = alpha + betai and T = alpha - betai, where i is the imaginary unit.
+Calculate the roots of the cubic equation using the formulae: x1 = S + T - (B/3A), x2 = -(S + T)/2 - (B/3A) + isqrt(3)(S - T)/2, and x3 = -(S + T)/2 - (B/3A) - isqrt(3)(S - T)/2.
+Return the roots x1, x2, and x3.
+
+
+Project 2B Algorithm
+Initialize the coefficients A, B, C, D, and E.
+Calculate the discriminant, delta_0 = B^2 - 4AC.
+Calculate the discriminant, delta_1 = 2B^3 - 9ABC + 27A^2D.
+If delta_0 and delta_1 are both zero, then the equation has two double roots, which are x = -B/(4A).
+If delta_0 is zero and delta_1 is nonzero, then the equation has two double roots and two real roots. The double roots are x = -B/(4A) and the real roots are found by solving the cubic equation G(y) = y^3 + (2B^3 - 9ABC)/(27A^2)y^2 + (AC - B^2D)/(3A^2)y - B^3/(27A^3) = 0 using the cubic root algorithm.
+If delta_0 is nonzero and delta_1 is zero, then the equation has four real roots, which are found by solving the equation F(x) = 0 where F(x) = 4x^3 - 2Bx^2 + (4AC - B^2)x - 4AD + B^3/(4A) using the cubic root algorithm.
+If delta_0 and delta_1 are both nonzero, then the equation has four real roots, which are found by solving the resolvent cubic equation R(y) = y^3 + (4AC - B^2)y^2 + (2B^3 - 27A^2D - 18ABC)y - B^3 + 4AB^2C - 8A^2D = 0 using the cubic root algorithm. Let the roots of R(y) be r1, r2, and r3.
+Calculate the four roots of the quartic equation using the formulae x1 = (-B + Sqrt(delta_0) + Sqrt(2r1 - (2/3)B^2 - delta_1/(3ASqrt(delta_0))))/(4A), x2 = (-B - Sqrt(delta_0) + Sqrt(2r2 - (2/3)B^2 - delta_1/(3ASqrt(delta_0))))/(4A), x3 = (-B + Sqrt(delta_0) - Sqrt(2r3 - (2/3)B^2 - delta_1/(3ASqrt(delta_0))))/(4A), and x4 = (-B - Sqrt(delta_0) - Sqrt(-(2/3)B^2 - delta_1/(3ASqrt(delta_0))))/(4*A).
+Return the four roots x1, x2, x3, and x4
