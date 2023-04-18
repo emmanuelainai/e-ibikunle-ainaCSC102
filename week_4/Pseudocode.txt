@@ -1,0 +1,25 @@
+Project 1
+Create two lists: one for girls' data and one for boys' data
+For each girl in the list of girls:
+    Add the girl's name, age, height, and score to the girls' data list
+For each boy in the list of boys:
+    Add the boy's name, age, height, and score to the boys' data list
+Print the header of the table with columns for name, age, height, and score
+For each student's data in the girls' data list:
+    Print the student's data in a row under the header
+For each student's data in the boys' data list:
+    Print the student's data in a row under the header
+    
+    
+Project 2    
+Prompt the user to enter the staff's years of experience and age
+Convert the input to integers
+If years of experience is greater than or equal to 25 and age is greater than or equal to 55:
+    Set annual tax revenue to 5,600,000
+Else if years of experience is greater than or equal to 20 and age is greater than or equal to 45:
+    Set annual tax revenue to 4,480,000
+Else if years of experience is greater than or equal to 10 and age is greater than or equal to 35:
+    Set annual tax revenue to 1,500,000
+Else:
+    Set annual tax revenue to 550,000
+Print the annual tax revenue    
