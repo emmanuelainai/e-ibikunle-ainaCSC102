@@ -1,0 +1,22 @@
+class FederalBursary:
+    def __init__(self):
+        self.username = ""
+        self.state_of_origin = ""
+    
+    def bursary(self):
+        self.username = input("Enter your username: ")
+        self.state_of_origin = input("Enter your state of origin: ")
+    
+    def allowance(self):
+        print("Username:", self.username)
+        print("State of Origin:", self.state_of_origin)
+
+
+# Create an instance of the FederalBursary class
+bursary_obj = FederalBursary()
+
+# Call the bursary() method to prompt for username and state of origin
+bursary_obj.bursary()
+
+# Call the allowance() method to print the entered data as objects
+bursary_obj.allowance()
